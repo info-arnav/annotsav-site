@@ -1,6 +1,33 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+
+const arr = [
+  [
+    "User Control",
+    "Through a mobile app, users can monitor soil moisture levels, adjust settings, and manually control the irrigation system.",
+    "/assets/raw/UserControl.png",
+  ],
+  [
+    "Smart Sensors",
+    "Annotsav uses advanced soil moisture sensors to monitor the exact water needs of your plants",
+    "/assets/raw/SmartSensors.png",
+  ],
+  [
+    "Weather Integration",
+    "The system integrates real-time weather data to adjust watering schedules, preventing over-watering or under-watering.",
+    "/assets/raw/WeatherIntegration.png",
+  ],
+  [
+    "Automated Irrigation",
+    "Annotsav automates the watering process, ensuring plants receive the right amount of water at the right time",
+    "/assets/raw/AutomatedIrrigation.png",
+  ],
+];
 
 export default function UserControl() {
+  const [page, setPage] = useState(0);
   return (
     <div
       className="user-control-banner"
@@ -38,15 +65,67 @@ export default function UserControl() {
               Works ?
             </span>
           </h1>
-          <p style={{ marginBottom: 10 }}>
-            <b>1. Automated Plant irrigation : </b>On the basis of moisture
-            level and other conditions the machine automatically waters plants.
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              alignItems: "center",
+              marginTop: 20,
+            }}
+          >
+            <Image
+              src="/assets/raw/plant.png"
+              style={{
+                backgroundColor: page == 0 ? "green" : "lightgreen",
+                cursor: "pointer",
+                marginLeft: 10,
+                borderRadius: "100%",
+              }}
+              width={40}
+              height={40}
+              onClick={(e) => setPage(1 - 1)}
+            ></Image>{" "}
+            <Image
+              src="/assets/raw/plant.png"
+              style={{
+                backgroundColor: page == 1 ? "green" : "lightgreen",
+                cursor: "pointer",
+                marginLeft: 10,
+                borderRadius: "100%",
+              }}
+              width={40}
+              height={40}
+              onClick={(e) => setPage(2 - 1)}
+            ></Image>{" "}
+            <Image
+              src="/assets/raw/plant.png"
+              style={{
+                backgroundColor: page == 2 ? "green" : "lightgreen",
+                cursor: "pointer",
+                marginLeft: 10,
+                borderRadius: "100%",
+              }}
+              width={40}
+              height={40}
+              onClick={(e) => setPage(3 - 1)}
+            ></Image>{" "}
+            <Image
+              src="/assets/raw/plant.png"
+              style={{
+                backgroundColor: page == 3 ? "green" : "lightgreen",
+                cursor: "pointer",
+                marginLeft: 10,
+                borderRadius: "100%",
+              }}
+              width={40}
+              height={40}
+              onClick={(e) => setPage(4 - 1)}
+            ></Image>
+          </div>
+          <p style={{ marginBottom: 10, fontSize: 32 }}>
+            <b>{arr[page][0]}</b>
           </p>
-          <p style={{ marginBottom: 10 }}>
-            <b>2. Manual Control : </b> Through a mobile app, users can monitor
-            soil moisture levels, adjust settings, and manually control the
-            irrigation system.
-          </p>
+          <p style={{ marginBottom: 10 }}>{arr[page][1]} </p>
         </div>{" "}
         <div
           style={{
@@ -56,11 +135,7 @@ export default function UserControl() {
             justifyContent: "center",
           }}
         >
-          <Image
-            src="/assets/raw/UserControl.png"
-            width={300}
-            height={400}
-          ></Image>
+          <Image src={arr[page][2]} width={300} height={400}></Image>
         </div>
       </div>
     </div>
