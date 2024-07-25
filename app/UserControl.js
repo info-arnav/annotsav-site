@@ -72,6 +72,7 @@ export default function UserControl() {
               alignItems: "center",
               marginTop: 20,
             }}
+            className="courosel"
           >
             <Image
               src="/assets/raw/plant.png"

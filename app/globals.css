@@ -114,6 +114,9 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .courosel {
+    justify-content: "center";
+  }
   .start {
     align-items: center !important;
     text-align: center;
