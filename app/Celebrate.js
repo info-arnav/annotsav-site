@@ -20,7 +20,7 @@ export default function Celebrate() {
           width={200}
         ></Image>
         <h1 style={{ fontSize: 100, margin: 0, lineHeight: 0.5 }}>
-          LET'S CELEBRATE
+          LET&apos;S CELEBRATE
         </h1>
         <h1 style={{ fontSize: 100, margin: 0, color: "rgb(54 94 50)" }}>
           ANN-OTSAV
