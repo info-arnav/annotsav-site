@@ -175,7 +175,7 @@ input {
   margin: 2px;
   padding: 10px;
   border-radius: 20px;
-  margin: none;
+  margin: 5px;
   border: 2px solid black;
   height: 30px;
   background-color: rgb(249, 249, 249);
@@ -187,7 +187,7 @@ textarea {
   margin: 2px;
   padding: 10px;
   border-radius: 20px;
-  margin: none;
+  margin: 5px;
   border: 2px solid black;
   height: 80px;
   background-color: rgb(249, 249, 249);
@@ -197,7 +197,7 @@ textarea {
 button {
   max-width: 500px;
   border-radius: 20px;
-  margin: none;
+  margin: 5px;
   border: 2px solid black;
   height: 40px;
   background-color: rgb(76 154 68);
