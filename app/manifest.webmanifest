@@ -1,0 +1,36 @@
+{
+  "name": "Annotsav - Smart Irrigation Solutions",
+  "short_name": "Annotsav",
+  "description": "Annotsav empowers farmers and gardeners with smart irrigation solutions, conserving water and improving crop yields.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "/assets/logo_125x100.png",
+      "sizes": "125x100",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo_black_1080x1080.png",
+      "sizes": "1080x1080",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/annotsav_164x174.png",
+      "sizes": "164x174",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo_500x500.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo_500x500_no_bg.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ]
+}
